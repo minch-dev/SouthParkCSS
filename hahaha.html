@@ -81,90 +81,102 @@ var *	{	display:none;	}
 #K .▲ h5	{	width:76px; height:3px; background:#663300;	}
 */
 #K .☻ *	{	display:block; position:relative; 	}
-/* position:absolute; left:0px; right:0px; background:#FF6600; */
-#K .☻ var		{	font-size:120px;	}
-#K .☻ var *	{	border-top-color:#FF6600; border-bottom-color:#FF6600; 	}	
+/* position:absolute; left:0px; right:0px; */
+#K .☻ var		{	font-size:120px; background:#FF6600;	}
+/**/
+#K .☻ var *	{	border-top-color:#FF6600; border-bottom-color:#FF6600;	}	
+#K .☻ ins		{	position:relative; margin:-90px auto 0px; width:64px; height:64px; background:#FFE1C3;	}
+#K .☻ ins small		{	width:100%; padding-top:14px;	}
 
-#K .☻ ins		{	position:absolute; top:30px; width:100%; height:64px;	}
+/*	край капюшона	*/
 
-#K .☻ ins samp		{	top:0; bottom:0; border:solid 11px #663300; border-bottom:none;	 border-top:none;	}
-#K .☻ ins samp *	{	 border:solid 16px #663300; border-top:solid 25px transparent; border-bottom:solid 25px transparent;	}
-#K .☻ ins samp q,#K .☻ ins samp b	{	 top:0px;	}
-#K .☻ ins samp em,#K .☻ ins samp i	{	 bottom:0px;	}
+/*
+#K .☻ ins samp		{	position:absolute; left:0px; right:0px; top:0; bottom:0; border:solid 11px #663300; border-bottom:none; border-top:none;	}
+#K .☻ ins samp *	{	position:absolute; left:0px; right:0px; border:solid 16px #663300; border-top:solid 25px transparent; border-bottom:solid 25px transparent;	}
+#K .☻ ins samp q, #K .☻ ins samp b	{	 top:0px;	}
 #K .☻ ins samp q		{	border-top:none;	}
+#K .☻ ins samp em,#K .☻ ins samp i	{	 bottom:0px;	}
 #K .☻ ins samp em		{	border-bottom:none;	}
-#K .☻ ins samp b, #K .☻ ins samp i	{	border-width:25px;	}
-#K .☻ ins samp b		{	border-top:none; border-bottom-width:16px;	}
-#K .☻ ins samp i		{	border-bottom:none; border-top-width:16px;	}
+#K .☻ ins samp b, #K .☻ ins samp i	{	border-width:21px;	}
+#K .☻ ins samp b		{	border-top:none; border-bottom-width:13px;	}
+#K .☻ ins samp i		{	border-bottom:none; border-top-width:13px;	}
+/*	край капюшона	*/
 
-#K .☻ ins p		{	bottom:0px; top:0px;	}
-#K .☻ ins p *		{	border:solid 21px #FF6600; border-top:solid 19px transparent; border-bottom:solid 19px transparent;	}
+#K .☻ ins p		{	position:absolute; top:0px;	left:0px; width:100%; height:100%; }
+#K .☻ ins p *		{	position:absolute; left:0px; right:0px; border:solid 21px #FF6600; border-top:solid 19px transparent; border-bottom:solid 19px transparent;	}
 #K .☻ ins p q		{	border-top:none; top:0px;	}
 #K .☻ ins p b		{	border-bottom:none; bottom:0px;	}
+#K small		{	 width:64px !important;	}
+/*/*
+
+
+*/
 
 
 
-h4	{	display:block; position:absolute; left:0px;right:0px;	}
+		h4	{	display:block; position:absolute; left:0px;right:0px;	}
 
-small	{	width:60px;	}
-small, small *	{	display:block; position:static !important; left:auto !important; right:auto !important;	}
-	small sup, small sub	{	height:34px;width:49%;float:left; clear:right; position:relative !important;	}
-	small sub	{		}
-		small sub *	{	border:solid 5px white; border-right:solid 5px transparent; border-left:solid 5px transparent; float:right; clear:both;	}
-		small sub q	{	width:7px; border-top:none; 		border-left-width:9px; margin-right:2px;	}
-		small sub em	{	width:21px; border-top:none; border-right-width:2px; border-right-left:6px; border-bottom-width:10px;   	}
-		small sub i	{	width:26px; border-bottom:none; border-right-width:2px; border-left:none; border-top-width:10px;   	}
-		small sub b	{	width:13px; border-bottom:none; border-right-width:8px; border-right-left:6px; border-top-width:9px; margin-right:2px;   	}
-	small sup	{	left:1px !important;	}
-		small sup *		{	float:left; clear:both; border:solid 5px white; border-left:solid 5px transparent; border-right:solid 5px transparent;	}
-		small sup q		{	width:7px; border-top:none; border-right-width:9px; margin-left:2px;	}
-		small sup em	{	width:21px; border-top:none; border-left-width:2px; border-right-width:6px; border-bottom-width:10px;   	}
-		small sup i		{	width:27px; border-bottom:none; border-left-width:2px; border-right:none; border-top-width:10px;   	}
-		small sup b		{	width:13px; border-bottom:none; border-left-width:8px; border-right-width:6px; border-top-width:9px; margin-left:2px;   	}
-		small kbd		{	position:absolute !important; display:block !important; margin:0px !important; top:40%; border:none; width:5px; height:5px; background:black; border-radius:100%;	}
-		small sub kbd	{	right:10px !important;	}
-		small sup kbd	{	left:10px !important;	}
+		small	{		}
+		small, small *	{	display:block; position:static !important;	}
+	small sub, small sup	{	height:34px; width:32px; position:relative !important; background:white; border-radius:20px;	}
+	small sub	{	 border-top-right-radius:12px; border-bottom-left-radius:12px; float:left;	}
+	small sup	{	 border-bottom-right-radius:12px; border-top-left-radius:12px; float:right;	}
+small kbd		{	position:absolute !important; display:block !important; margin:0px !important; top:40%; border:none; width:4px; height:4px; background:black; border-radius:100%;	}
+small sub kbd	{	right:10px !important;	}
+small sup kbd	{	left:10px !important;	}
 		
-	#K .☻ ins				{	background:#FFE1C3; top:0px; bottom:0px; width:100%; height:100%; text-align:center;	}
-	#K .☻ ins small		{	display:inline-block; margin-top:14px;	}
 
-#S	{	position:absolute; left:555px; top:377px; width:120px;	}
-	#S .▲		{	top:111px;	}
-	#S .▲ h1	{	}
-	
-	#S .☻		{	position:relative;	}
-	#S .☻ ins	{	position:absolute; top:34px; left:0px; width:100%; height:19px; overflow:hidden;	}
-	#S .☻ ins q	{	display:block; width:500px; height:500px; margin-left:-204px; border:solid 12px #CC0000; border-radius:100%; 	}
-	#S .☻ ins em	{	display:none;	}
-	#S .☻ small		{	position:absolute !important; top:50px !important; left:0px; width:100%;	}
-	#S .☻ small kbd	{	top:42%;	}
-	#S .☻ small sub kbd	{	right:8px !important;	}
-	#S .☻ small sup kbd	{	left:8px !important;	}
+		#S	{	position:absolute; left:555px; top:377px; width:112px;	}
+#S .▲		{	top:111px;	}
+#S .▲ h1	{		}
+
+#S .☻	{	position:relative;	}
+#S .☻ ins	{	position:absolute; top:34px; left:0px; width:100%; height:19px; overflow:hidden;	}
+#S .☻ ins q	{	display:block; width:500px; height:500px; margin-left:-204px; border:solid 12px #CC0000; border-radius:100%; 	}
+#S .☻ ins em	{	display:none;	}
+#S .☻ div		{	position:absolute !important; left:0px; width:100%; top:50px !important;	}
+#S .☻ small		{	width:64px !important; margin:0 auto;	}
+#S .☻ small kbd	{	top:42%;	}
+#S .☻ small sub kbd	{	right:8px !important;	}
+#S .☻ small sup kbd	{	left:8px !important;	}
+
+#○, #Ө	{	font-size:118px; width:0.95em;	}
+#Ө		{	position:absolute; top:0px;  clip:rect(0px 121px 46px 0px); background:#225CBF;	}
+#Ө *	{	border-top-color:#225CBF; border-bottom-color:#225CBF; 	}
+#○		{	font-size:118px; width:0.95em;		}
+#☼		{	font-size:28px;	position:absolute; top:-14px; left:44px; background:#CC0000;	}
+#☼ *	{	border-top-color:#CC0000; border-bottom-color:#CC0000; 	}
+
+	pre		{	position:absolute; top:98px; left:0px; right:0px; width:100%; height:10px; overflow:hidden; white-space:normal;	}
+	pre *	{	display:block !important; margin:0px auto;	}
+	pre b	{	 height:40px; width:40px; border-radius:100%; border:solid 1px black; position:relative; top:-38px;	}
+
+/*rect(top right bottom left)
+#dodo		{	position:relative; left:50%;	}
+#dodo sub, #dodo samp		{	position:absolute; left:-50%;	}
+
+#dodo sub	{	display:block; width:120px; height:120px; border-radius:100%; background:#FF6600;	}
+#dodo q,#dodo b 	{	display:block; position:absolute; top:-3px; border:solid 20px #663300; width:170px; height:86px; border-radius: 105px / 63px;	}
+#dodo q	{	left:15px; clip:rect(15px 50px 110px 0px);	}
+#dodo b	{	right:15px; clip:rect(15px 300px 110px 160px);	}
+#dodo i	{	border:solid 22px #FF6600; width:76px; position:absolute; top:6px; left:0; height:64px; border-radius: 60px / 54px;	}
+#dodo em	{	display:block;; position:absolute; top:28px; left:0;  border:solid 1px #663300; width:86px; height:76px;  border-radius: 43px / 37px;	}
 
 
-
-	#Ө		{	font-size:117px; position:absolute; top:0px; left:2px; clip:rect(0px 121px 46px 0px); background:#225CBF;	}
-	#Ө *	{	border-top-color:#225CBF; border-bottom-color:#225CBF; 	}
-	#○		{	font-size:117px; margin-left:2px;		}
-	#☼		{	font-size:28px;	position:absolute; top:-14px; left:44px; background:#CC0000;	}
-	#☼ *	{	border-top-color:#CC0000; border-bottom-color:#CC0000; 	}
-
-h6		{	position:absolute; top:98px; left:0px; right:0px; width:100%; height:10px; overflow:hidden;	}
-h6 *	{	display:block !important; margin:0px auto;	}
-h6 b	{	 height:40px; width:40px; border-radius:100%; border:solid 1px black; position:relative; top:-38px;	}
-
-
-
-
+#dodo sub	{	display:block; border:solid 20px black; position:absolute; bottom:0px; right:0px; left:0px; top:0px; border-bottom:none; border-top:none; border-radius:100%;
+#dodo	{	border:solid 35px #663300; width:170px; height:86px; border-radius: 120px / 78px	}
+#dodo2	{	border:solid 22px #FF6600; width:76px; position:absolute; top:0; left:0; height:64px; border-radius: 60px / 54px;
+}
+*/
 </style>
 <!--[if lt IE 9]>
 <style>
-#K .☻ var, #Ө, #☼, h6	{	background:none; border:none;	}
-h6 b,h6 q	{	font-size:30px; position:static !important;  left:auto !important; top:auto !important; right:auto !important; width:0px !important; height:0px !important; border:solid 0.15em #FFE1C3; border-left:solid 0.36em transparent; border-right:solid 0.36em transparent; border-bottom:none;overflow:visible !important;	}
-h6 b	{	margin-bottom:-0.09em; position:relative !important; z-index:2;	}
-h6 q	{	border-top-color:black;	}
+#K .☻ var, #Ө, #☼, pre	{	background:none; border:none;	}
+pre b,pre q	{	font-size:30px; position:static !important;  left:auto !important; top:auto !important; right:auto !important; width:0px !important; height:0px !important; border:solid 0.15em #FFE1C3; border-left:solid 0.36em transparent; border-right:solid 0.36em transparent; border-bottom:none;overflow:visible !important;	}
+pre b	{	margin-bottom:-0.09em; position:relative !important; z-index:2;	}
+pre q	{	border-top-color:black;	}
 /*круг*/
-var		{	background:none;	}
+var		{	background:none; width:1em !important;	}
 	var *	{	position:static !important; display:block !important; left:auto !important; right:auto !important; border:solid 0.15em #FFE1C3; border-left:solid 0.36em transparent; border-right:solid 0.36em transparent;	}
 	var em,var q	{	width:0px; height:0px; margin:0px auto;	}
 	var em		{	border-bottom:none;	}
@@ -177,26 +189,50 @@ var		{	background:none;	}
 #S .☻ ins *	{	display:block !important; margin:0px !important; background:none; border:solid 40px #CC0000 !important; border-top:none !important; width:40px !important; height:0px !important;	}
 #S .☻ ins q	{	border-bottom:solid 12px #CC0000 !important; border-left-color:transparent !important; border-right-color:transparent !important; }
 #S .☻ ins em	{	border-bottom:solid 12px transparent !important; }
-	
+#Ө, #○ 	{	font-size:117px;	}
+
+small sup, small sub	{	background:none;	}
+small kbd	{	border:none !important;	}
+small sub *	{	border:solid 5px white; border-right:solid 5px transparent; border-left:solid 5px transparent; float:right; clear:both;	}
+small sub q		{	width:7px; border-top:none; border-left-width:9px; margin-right:2px;	}
+small sub em	{	width:21px; border-top:none; border-right-width:2px; border-right-left:6px; border-bottom-width:10px;   	}
+small sub i	{	width:26px; border-bottom:none; border-right-width:2px; border-left:none; border-top-width:10px;   	}
+small sub b	{	width:13px; border-bottom:none; border-right-width:8px; border-right-left:6px; border-top-width:9px; margin-right:2px;   	}
+	small sup	{	float:right;	}
+small sup *		{	float:left; clear:both; border:solid 5px white; border-left:solid 5px transparent; border-right:solid 5px transparent;	}
+small sup q		{	width:7px; border-top:none; border-right-width:9px; margin-left:2px;	}
+small sup em	{	width:21px; border-top:none; border-left-width:2px; border-right-width:6px; border-bottom-width:10px;   	}
+small sup i		{	width:27px; border-bottom:none; border-left-width:2px; border-right:none; border-top-width:10px;   	}
+small sup b		{	width:13px; border-bottom:none; border-left-width:8px; border-right-width:6px; border-top-width:9px; margin-left:2px;   	}
+
 </style>
 <![endif]-->
 </head>
 
 <body>
+<div id="dodo">
+	<sub></sub>
+	<samp>
+		<b></b><q></q><i></i><em></em>
+	</samp>
+</div>
+
 
 <div id="S">
 	<div class="☻">
-		<small>
-			<sub><q></q><em></em><i></i><b></b><kbd></kbd></sub>
-			<sup><q></q><em></em><i></i><b></b><kbd></kbd></sup>
-		</small>
+		<div>
+			<small>
+				<sub><q></q><em></em><i></i><b></b><kbd></kbd></sub>
+				<sup><q></q><em></em><i></i><b></b><kbd></kbd></sup>
+			</small>
+		</div>
 		<var id="○"><q></q><b></b><i></i><em></em></var>
 		<var id="Ө"><q></q><b></b><i></i><em></em></var>
 		<var id="☼"><q></q><b></b><i></i><em></em></var>
 		<ins><q></q><em></em></ins>
-		<h6>
+		<pre>
 			<b></b><q></q>
-		</h6>
+		</pre>
 	</div>
 	<div class="▲">
 		<h2></h2>
@@ -204,24 +240,24 @@ var		{	background:none;	}
 		<h4></h4>
 		<h5></h5>
 	</div>	
-	<div class="₪">
+	<!--div class="₪">
 		<ins>
 			<h2></h2>
-			<samp>
+			<div>
 				<h3><var><q></q><b></b><i></i><em></em></var></h3>
 				<h4><var><q></q><b></b><i></i><em></em></var></h4>
 				<h5><var><q></q><b></b><i></i><em></em></var></h5>
-			</samp>
+			</div>
 		</ins>
 		<del>
 			<h2></h2>
-			<samp>
+			<div>
 				<h3><var><q></q><b></b><i></i><em></em></var></h3>
 				<h4><var><q></q><b></b><i></i><em></em></var></h4>
 				<h5><var><q></q><b></b><i></i><em></em></var></h5>
-			</samp>
+			</div>
 		</del>
-	</div>
+	</div-->
 </div>
 
 
@@ -233,8 +269,8 @@ var		{	background:none;	}
 				<sub><q></q><em></em><i></i><b></b><kbd></kbd></sub>
 				<sup><q></q><em></em><i></i><b></b><kbd></kbd></sup>
 			</small>
-			<!--samp><q></q><em></em><b></b><i></i></samp>
-			<p><q></q><b></b></p-->
+			<samp><q></q><em></em><b></b><i></i></samp>
+			<p><q></q><b></b></p>
 		</ins>
 	</div>
 	<!--div class="▲">
@@ -246,19 +282,19 @@ var		{	background:none;	}
 	<div class="₪">
 		<ins>
 			<h2></h2>
-			<samp>
+			<div>
 				<h3><var><q></q><b></b><i></i><em></em></var></h3>
 				<h4><var><q></q><b></b><i></i><em></em></var></h4>
 				<h5><var><q></q><b></b><i></i><em></em></var></h5>
-			</samp>
+			</div>
 		</ins>
 		<del>
 			<h2></h2>
-			<samp>
+			<div>
 				<h3><var><q></q><b></b><i></i><em></em></var></h3>
 				<h4><var><q></q><b></b><i></i><em></em></var></h4>
 				<h5><var><q></q><b></b><i></i><em></em></var></h5>
-			</samp>
+			</div>
 		</del>
 	</div-->
 </div>
@@ -268,14 +304,18 @@ var		{	background:none;	}
 </body>
 </html>
 <!--
-<h1><h2><h3><h4><h5><h6>
-<del></del>
+<div>
+	<ins>
+		<del>
+			<h1><h2><h3><h4><h5><h6>
+		</del>
+	</ins>
+</div>
 <pre></pre>
 <sup></sup>
 <sub></sub>
 <samp></samp>
 <kbd></kbd>
-<ins></ins>
 
 <small></small>
 <var></var>
