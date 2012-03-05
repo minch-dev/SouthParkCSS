@@ -12,6 +12,17 @@
 transform: scaleX(-1);
 filter: FlipH;
 -ms-filter: "FlipH";
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+@import 'non-ie.css' all	6-7
+
+transform:			rotate(10deg);		transform-origin:		100% 100%;
+-webkit-transform:	rotate(10deg);	-webkit-transform-origin:	100% 100%;
+-moz-transform:		rotate(10deg);	-moz-transform-origin:		100% 100%;
+-o-transform:		rotate(10deg);	-o-transform-origin:		100% 100%;
+-ms-transform:		rotate(10deg);	-ms-transform-origin:		100% 100%;
+
+
  */
  
 html, body, div, span, applet, object, iframe,
@@ -35,168 +46,266 @@ blockquote, q	{	quotes:"" "";	}
 
 </style>
 
-
-
-
-
 <style>
+p, ins, del, sub, sup, samp, b, q, i, em	{	display:block;	}
+	var		{	display:block; font-size:114px; width:1em; height:1em; border-radius:100%; background:#FFE1C3;	}
+var *	{	display:none;	}
 
-/*
+		small	{	display:block;   	}
+		small *	{	display:block; position:static !important;	}
+	small sub, small sup	{	 width:50%; float:left; position:relative !important;	}
+	small sub q, small sup q	{	height:34px; width:32px; background:white; border-radius:20px;	}
+	small sub q	{	 border-top-right-radius:12px; border-bottom-left-radius:12px;float:right;	}
+	small sup q	{	 border-bottom-right-radius:12px; border-top-left-radius:12px; float:left;	}
+small kbd		{	position:absolute !important; display:block !important; margin:0px !important; top:40%; border:none; width:4px; height:4px; background:black; border-radius:100%;	}
+small sub kbd	{	right:10px !important;	}
+small sup kbd	{	left:10px !important;	}
+
+.☻		{	position:relative; z-index:2; 	}
+.▲		{	display:block; position:absolute; width:100%; left:0px; right:0px; z-index:1;	}
+.▲ *		{	display:block;	}
+.▲ h2,.▲ h3	{	position:absolute; top:0px; background:#FF6600; width:39px; height:40px; border-radius:5px 5px 20px 20px / 20px 20px 2px 2px;	}
+.▲ h2	{	right:50%;
+transform:			rotate(10deg);		transform-origin:		100% 100%;
+-webkit-transform:	rotate(5deg);	-webkit-transform-origin:	100% 100%;
+-moz-transform:		rotate(10deg);	-moz-transform-origin:		100% 100%;
+-o-transform:		rotate(10deg);	-o-transform-origin:		100% 100%;
+-ms-transform:		rotate(10deg);	-ms-transform-origin:		100% 100%;
+}
+.▲ h3	{	left:50%;
+transform:			rotate(-10deg);		transform-origin:		0% 100%;
+-webkit-transform:	rotate(-5deg);	-webkit-transform-origin:	0% 100%;
+-moz-transform:		rotate(-10deg);	-moz-transform-origin:		0% 100%;
+-o-transform:		rotate(-10deg);	-o-transform-origin:		0% 100%;
+-ms-transform:		rotate(-10deg);	-ms-transform-origin:		0% 100%;
+}
+
+.▲ i	{	border:none; width:2px; height:40px; background:#663300; margin-left:-1px; position:absolute; left:50%; top:0px; z-index:2;	}
+.▲ h4	{	width:72px; height:15px; background:#FF6600; margin:34px auto 0px;	}
+.▲ h5	{	width:76px; height:3px; background:#663300; margin:0px auto; }
+
+
 .₪		{	display:block; position:absolute; width:100%; top:101px; left:0px; right:0px; z-index:0; background:green;	}
 .₪ *	{	display:block;	}
-.₪ samp	{	position:relative; top:-6px; font-size:17px; width:1em; height:1em; }
+
+.₪ i	{	width:8px; border:solid 15px transparent; border-bottom:solid 36px #FF6600; border-top:none;	}
 .₪ del	{	float:right; margin-right:6px;	}
 .₪ ins	{	float:left; margin-left:6px;	}
-.₪ del samp,.₪ del h2	{	float:right; clear:both;	}	
-.₪ h2	{	width:8px; border:solid 15px transparent; border-bottom:solid 36px #FF6600; border-top:none;	}
-.₪ del h2	{	border-left:none;	}
-.₪ ins h2	{	border-right:none;	}
-.₪ h4,.₪ h5	{	position:absolute; top:0px;	}
-.₪ ins h4,.₪ ins h5		{	right:0px;	}
-.₪ h3 var	{	 font-size:1em;	}
-.₪ h4 var, .₪ h5 var	{	font-size:0.48em;	}
-.₪ h3 var,.₪ h4 var, .₪ h5 var	{	background:#663300;	}
+.₪ del i	{	border-left:none;	}
+.₪ ins i	{	border-right:none;	}
 
-.₪ h4 var	{	background:black; margin-top:1px; margin-left:1px;	}
-.₪ h4, .₪ h5	{	position:relative; top:0px;	}
-.₪ ins	{	float:left;	}
-.₪ del	{	float:right;	}
-.₪ del h4, .₪ del h5	{		}
+
+.₪ var		{	 font-size:1em;	}
+.₪ var var	{	font-size:0.48em;	}
+.₪ var,.₪ var var	{	background:#663300; border:solid 1px black;	}
+
+/*
+
+.₪ ins var var		{	right:0px;	}
+.₪ del var var	{		}
+
+
+.₪ i	{	position:relative; top:-6px; font-size:17px; width:1em; height:1em; }
+
 */
 
 
+		#K	{	position:absolute; left:685px; top:380px; width:120px;	}
+	#K .☻	{	position:relative; 	}
+#K .☻ var	{		}
+#K .☻ var		{	font-size:120px; background:#FF6600;	}
+#K .☻ ins	{	position:absolute; top:0px; left:0px; right:0px; bottom:0px; text-align:center;	}
+#K .☻ ins small		{	width:65%; height:53px; padding-top:20px; margin:0 auto; position:relative; top:23px; background:#FFE1C3;	}
 
-		h4	{	display:block; position:absolute; left:0px;right:0px;	}
+#K .☻ ins samp	{	height:65px; position:absolute; left:0%; right:0%; top:23%; overflow:hidden;}
+#K .☻ ins samp q, #K .☻ ins samp b 	{	position:absolute; top:-37%; border:solid 14px #663300; width:170px; height:86px; border-radius: 99px / 57px;	}
+#K .☻ ins samp q	{	left:20px;	}
+#K .☻ ins samp b	{	right:20px;	}
+#K .☻ ins p		{	position:absolute; left:0px; top:0px; width:100%; height:100%;	}
+#K .☻ ins p q	{	border:solid 22px #FF6600; width:76px; position:absolute; top:5%; left:0; height:64px; border-radius: 60px / 54px;	}
+#K .☻ ins p b	{	position:relative; top:28px; margin:0px auto;  border:solid 1px #663300; width:86px; height:73px;  border-radius: 43px / 37px;	}
+	#K .▲		{	top:111px;	}
 
-		
+		#S	{	position:absolute; left:555px; top:377px; width:112px;	}
+#S .☻	{	position:relative; 	}
+#S .☻ var	{	width:0.95em; font-size:118px;	}
+#S .☻ small		{	position:absolute !important; left:0px; width:100%; top:50px !important;	}
+#S .☻ small kbd	{	top:42%;	}
+#S .☻ small sub kbd	{	right:8px !important;	}
+#S .☻ small sup kbd	{	left:8px !important;	}
+#S .☻ ins 	{	position:absolute; top:0px; left:0px; width:100%; height:46px; overflow:hidden;	}
+#S .☻ ins var	{	background:#225CBF;	}
+#S .☻ del	{	position:absolute; top:34px; left:0px; width:100%; height:19px; overflow:hidden;	}
+#S .☻ del q	{	width:500px; height:500px; margin-left:-204px; border:solid 12px #CC0000; border-radius:100%; 	}
+#S .☻ del em	{	display:none;	}
+#S .☻ p		{	position:absolute; top:-14px; left:0px; width:100%; line-height:0px;	}
+#S .☻ p sub, #S .☻ p sup	{	font-size:28px; width:1em; height:1em; margin:0px auto -1em;	}
+#S .☻ p sub *, #S .☻ p sup *	{	display:block; width:0.12em; height:100%; background:#CC0000; margin:0px auto -1em;	}
+#S .☻ p sub	{	 transform:rotate(22.5deg);	-webkit-transform:rotate(22.5deg);	-o-transform:rotate(22.5deg);	-moz-transform:rotate(22.5deg);	}
+#S .☻ p q	{	 transform:rotate(45deg);	-webkit-transform:rotate(45deg);	-o-transform:rotate(45deg);		-moz-transform:rotate(45deg);	}
+#S .☻ p b	{	 transform:rotate(-45deg);	-webkit-transform:rotate(-45deg);	-o-transform:rotate(-45deg);	-moz-transform:rotate(-45deg);	}
+#S .☻ p i	{	 transform:rotate(90deg);	-webkit-transform:rotate(90deg);	-o-transform:rotate(90deg);		-moz-transform:rotate(90deg);	}
+
+	pre		{	font-size:0px; position:absolute; top:98px; left:0px; right:0px; width:100%; height:10px; overflow:hidden; white-space:normal;	}
+	pre *	{	display:block !important; margin:0px auto;	}
+	pre b	{	height:40px; width:40px; border-radius:100%; border:solid 1px black; position:relative; top:-38px;	}
 
 
-#S .▲		{	top:111px;	}
-#S .▲ h1	{		}
+.☻ var,
+#S .☻ del q,
+#S .☻ p sub *,
+#S .☻ p sup *,
+.▲ h2	 {	box-shadow: -1px 1px 0px 0px rgba(0,0,0,0.5);	}
+small sub q, small sup q	 {	box-shadow: 1px -1px 0px 0px rgba(0,0,0,0.5);	}
 
-/*rect(top right bottom left)
-#dodo		{	position:relative; left:50%;	}
-#dodo sub, #dodo samp		{	position:absolute; left:-50%;	}
-
-#dodo sub	{	display:block; width:120px; height:120px; border-radius:100%; background:#FF6600;	}
-
-#dodo q,#dodo b 	{	display:block; position:absolute; top:-3px; border:solid 20px #663300; width:170px; height:86px; border-radius: 105px / 63px;	}
-#dodo q	{	left:15px; clip:rect(15px 50px 110px 0px);	}
-#dodo b	{	right:15px; clip:rect(15px 300px 110px 160px);	}
-#dodo i	{	border:solid 22px #FF6600; width:76px; position:absolute; top:6px; left:0; height:64px; border-radius: 60px / 54px;	}
-#dodo em	{	display:block;; position:absolute; top:28px; left:0;  border:solid 1px #663300; width:86px; height:76px;  border-radius: 43px / 37px;	}
-
-
-#dodo sub	{	display:block; border:solid 20px black; position:absolute; bottom:0px; right:0px; left:0px; top:0px; border-bottom:none; border-top:none; border-radius:100%;
-#dodo	{	border:solid 35px #663300; width:170px; height:86px; border-radius: 120px / 78px	}
-#dodo2	{	border:solid 22px #FF6600; width:76px; position:absolute; top:0; left:0; height:64px; border-radius: 60px / 54px;
-}
-*/
-
-#do		{	width:500px; height:300px; background:green; line-height:300px; text-align:center;	}
-#do	div	{	display:inline-block; background:red; line-height: normal; text-align:left;		}
-
+hr	{	display:block; vertical-align:top; width:30px;height:100px; margin:0px; color:black; background:#000; border:none;	}
 
 
 </style>
 <!--[if lt IE 9]>
 <style>
+.▲ h2,.▲ h3	{	width:0px; height:0px; position:static; background:none; margin:0px auto; border:solid 10px #FF6600; border-left:solid 6px transparent; border-right:solid 6px transparent;	}
+.▲ h2	{	width:64px;	border-top:none; border-bottom-width:33px;	}
+.▲ h3	{	border-width:38px; border-top-width:5px;	border-bottom:none;	}
+.▲ h4	{	margin-top:-5px;	}
+
+		small, small sup, small sub	{	background:none !important;	}
+	small sub *	{	border:solid 5px white; border-right:solid 5px transparent; border-left:solid 5px transparent; float:right; clear:both;	}
+small sub q		{	border-left-width:9px; margin-right:2px;	}
+small sub em	{	border-right-width:2px; border-right-left:6px; border-bottom-width:10px;   	}
+small sub i	{	width:26px; border-bottom:none; border-right-width:2px; border-left:none; border-top-width:10px;   	}
+small sub b	{	border-right-width:8px; border-right-left:6px; border-top-width:9px; margin-right:2px;   	}
+		small sup	{	float:right;	}
+	small sup *		{	float:left; clear:both; border:solid 5px white; border-left:solid 5px transparent; border-right:solid 5px transparent;	}
+small sup q		{	border-right-width:9px; margin-left:2px;	}
+small sup em	{	border-left-width:2px; border-right-width:6px; border-bottom-width:10px;   	}
+small sup i		{	border-left-width:2px; border-right:none; border-top-width:10px;   	}
+small sup b		{	border-left-width:8px; border-right-width:6px; border-top-width:9px; margin-left:2px;   	}
+
+small q		{	width:7px !important; height:0px !important; border-top:none !important; background:none !important;	}
+small em	{	width:21px; border-top:none;	}
+small i		{	width:27px; border-bottom:none;	}
+small b		{	width:13px; border-bottom:none;	}
+small kbd	{	border:none;	}
+
+#S .☻ del	{	overflow:visible; height:auto;	}
+#S .☻ del *	{	display:block !important; margin:0px !important; background:none; border:solid 40px #CC0000 !important; border-top:none !important; width:40px !important; height:0px !important;	}
+#S .☻ del q	{	border-bottom:solid 12px #CC0000 !important; border-left-color:transparent !important; border-right-color:transparent !important; }
+#S .☻ del em	{	border-bottom:solid 12px transparent !important; }
 
 
-#S .☻ ins		{	overflow:visible; height:auto;	}
-#S .☻ ins *	{	display:block !important; margin:0px !important; background:none; border:solid 40px #CC0000 !important; border-top:none !important; width:40px !important; height:0px !important;	}
-#S .☻ ins q	{	border-bottom:solid 12px #CC0000 !important; border-left-color:transparent !important; border-right-color:transparent !important; }
-#S .☻ ins em	{	border-bottom:solid 12px transparent !important; }
-#Ө, #○ 	{	font-size:117px;	}
+var,pre * 	{		behavior: url(../pie.htc); 	}
 
+
+#S .☻ div var,
+#S .☻ ins var,
+#S .☻ p var,
+small sub, small sup	{  filter:progid:DXImageTransform.Microsoft.Shadow(Color=#000000,Direction=45,Strength=1); 	}
 
 </style>
 <![endif]-->
-</head>
 
+<!--style>
+#K .☻ var, #S .☻ var, pre	{	background:none !important; border:none !important;	}
+	/*var		{	background:none; border:none; width:1em !important;	}
+var *	{	position:static !important; display:block !important; border:solid 0.15em #FFE1C3; border-left:solid 0.36em transparent; border-right:solid 0.36em transparent;	}
+var em, var q	{	width:0px; height:0px; margin:0px auto;	}
+var em		{	border-bottom:none;	}
+var q		{	border-top:none;	}
+var b,var i	{	border-width:0.14em;	}
+var i		{	border-top-width:0.36em; border-bottom:none;	}
+var b		{	border-bottom-width:0.36em; border-top:none;	}
+
+#S .☻ ins var, #S .☻ div var 	{	font-size:117px;	}
+#S .☻ ins var *	{	border-top-color:#225CBF; border-bottom-color:#225CBF; 	}
+#S .☻ p var *	{	border-top-color:#CC0000; border-bottom-color:#CC0000; 	}
+
+*/
+		#K	{}
+	#K .☻ *	{	border-radius:0px !important;	}
+#K .☻ var	{	background:none; border:none;	}
+#K .☻ var *	{	border-top-color:#FF6600; border-bottom-color:#FF6600;	}	
+
+#K .☻ ins small	{	width:100%; padding-top:14px; position:static !important;	}
+#K .☻ ins		{	position:relative; margin:-90px auto 0px; width:64px; height:64px; background:#FFE1C3;	}
+
+#K .☻ ins samp		{	position:absolute; top:0px; height:100%; border:solid 11px #663300; border-bottom:none; border-top:none; text-align:center; line-height:0px;	}
+#K .☻ ins samp *	{	position:static !important; border:solid 16px #663300 !important; border-top:solid 25px transparent !important; border-bottom:solid 25px transparent !important; width:auto !important; height:0px !important;	}
+
+#K .☻ ins samp b, #K .☻ ins samp i 	{	display:inline-block !important;	}
+#K .☻ ins samp q, #K .☻ ins samp em	{	display:block !important;	}
+
+#K .☻ ins samp q, #K .☻ ins samp b	{	 top:0px;	}
+#K .☻ ins samp q		{	border-top:none !important; margin-bottom:-25px;	}
+#K .☻ ins samp b, #K .☻ ins samp i	{	border-width:21px;	}
+#K .☻ ins samp b		{	border-top:none !important; border-bottom-width:13px !important; width:0px !important;	}
+
+#K .☻ ins samp em,#K .☻ ins samp i	{	 bottom:0px;	}
+#K .☻ ins samp em		{	border-bottom:none !important; margin-top:26px; margin-bottom:-13px;	}
+#K .☻ ins samp i		{	border-bottom:none !important; border-top-width:13px !important;	}
+
+#K .☻ ins p		{	position:absolute; top:0px;	left:0px; width:100%; height:100%; }
+#K .☻ ins p *		{	position: static  !important; display:block  !important; left:0px; right:0px; border:solid 21px #FF6600 !important; border-top:solid 19px transparent !important; border-bottom:solid 19px transparent !important; height:0px !important; width:auto  !important;	}
+#K .☻ ins p q		{	border-top:none !important; 	}
+#K .☻ ins p b		{	border-bottom:none !important; margin-top:26px;	}
+</style-->
+</head>
 <body>
+
 <div id="S">
 	<div class="☻">
-		<div>
-			<small>
-				<sub><q></q><em></em><i></i><b></b><kbd></kbd></sub>
-				<sup><q></q><em></em><i></i><b></b><kbd></kbd></sup>
-			</small>
-		</div>
-		<del>
-			<var id="○"><q></q><b></b><i></i><em></em></var>
-			<var id="Ө"><q></q><b></b><i></i><em></em></var>
-			<var id="☼"><q></q><b></b><i></i><em></em></var>
-		</del>
-		<ins><q></q><em></em></ins>
+		<div><var></var></div>
+		<ins><var></var></ins>
+		<del><q></q><em></em></del>
+		<p>
+			<sup><q></q><b></b><i></i><em></em></sup>
+			<sub><q></q><b></b><i></i><em></em></sub>
+		</p>
+		<small>
+			<sub><q></q><em></em><i></i><b></b><kbd></kbd></sub>
+			<sup><q></q><em></em><i></i><b></b><kbd></kbd></sup>
+		</small>
 		<pre>
 			<b></b><q></q>
 		</pre>
 	</div>
 	<div class="▲">
-		<h2></h2>
-		<h3></h3>
-		<h4></h4>
-		<h5></h5>
+		<i></i>
+		<h2></h2><h3></h3>
+		<h4></h4><h5></h5>
 	</div>	
-	<!--div class="₪">
-		<ins>
-			<h2></h2>
-			<div>
-				<h3><var><q></q><b></b><i></i><em></em></var></h3>
-				<h4><var><q></q><b></b><i></i><em></em></var></h4>
-				<h5><var><q></q><b></b><i></i><em></em></var></h5>
-			</div>
-		</ins>
-		<del>
-			<h2></h2>
-			<div>
-				<h3><var><q></q><b></b><i></i><em></em></var></h3>
-				<h4><var><q></q><b></b><i></i><em></em></var></h4>
-				<h5><var><q></q><b></b><i></i><em></em></var></h5>
-			</div>
-		</del>
-	</div-->
 </div>
 
 
 <div id="K">
 	<div class="☻">
-		<var><q></q><b></b><i></i><em></em></var>
+		<var></var>
 		<ins>
 			<small>
 				<sub><q></q><em></em><i></i><b></b><kbd></kbd></sub>
 				<sup><q></q><em></em><i></i><b></b><kbd></kbd></sup>
 			</small>
-			<samp><q></q><em></em><b></b><i></i></samp>
+			<samp><q></q><b></b><em></em><i></i></samp>
 			<p><q></q><b></b></p>
 		</ins>
 	</div>
-	<!--div class="▲">
-		<h2></h2>
-		<h3></h3>
-		<h4></h4>
-		<h5></h5>
+	<div class="▲">
+		<i></i>
+		<h2></h2><h3></h3>
+		<h4></h4><h5></h5>
 	</div>	
 	<div class="₪">
 		<ins>
-			<h2></h2>
-			<div>
-				<h3><var><q></q><b></b><i></i><em></em></var></h3>
-				<h4><var><q></q><b></b><i></i><em></em></var></h4>
-				<h5><var><q></q><b></b><i></i><em></em></var></h5>
-			</div>
+			<i></i>
+			<var><var></var></var>
 		</ins>
 		<del>
-			<h2></h2>
-			<div>
-				<h3><var><q></q><b></b><i></i><em></em></var></h3>
-				<h4><var><q></q><b></b><i></i><em></em></var></h4>
-				<h5><var><q></q><b></b><i></i><em></em></var></h5>
-			</div>
+			<i></i>
+			<var><var></var></var>
 		</del>
-	</div-->
+	</div>
 </div>
+
 
 
 
@@ -222,18 +331,6 @@ blockquote, q	{	quotes:"" "";	}
 
 <u></u>
 <s></s>
-
-
-#KRUG	{	width:121px; height:121px;	}
-var		{	display:block !important; font-size:120px;	}
-	var *	{	position:static !important; display:block !important; left:auto !important; right:auto !important; border:solid 18px #FF6600;border-left:solid 43px transparent; border-right:solid 43px transparent;	}
-	var p,var q	{	width:0px; height:0px; margin:0px auto;	}
-	var p		{	border-bottom:none;	}
-	var q		{	border-top:none;	}
-	var b,var i	{	border-width:18px;	}
-	var i		{	border-top-width:43px; border-bottom:none;	}
-	var b		{	border-bottom-width:43px; border-top:none;	}
-
 
 <strike>
 -->
